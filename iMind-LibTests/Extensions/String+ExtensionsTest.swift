@@ -1,0 +1,42 @@
+//
+//  iMind_LibTests.swift
+//  iMind-LibTests
+//
+//  Created by Révész Ádám on 2017. 01. 12..
+//  Copyright © 2017. iMind. All rights reserved.
+//
+
+import XCTest
+@testable import iMindLib
+
+class StringExtensionsTest: XCTestCase {
+    
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+    
+    func testPasswordValidator() {
+        XCTAssertFalse("asdf".isValidPassword(), "Passwords under 6 chars long are meant to be invalid.")
+        XCTAssert("asdfgh".isValidPassword(), "Passwords at least 6 chars long are meant to be valid.")
+    }
+    
+    func testEmailValidator() {
+        XCTAssertFalse("asfd".isValidEmail())
+        XCTAssertTrue("asdf@localhost".isValidEmail())
+        XCTAssertTrue("asdf+fdas@localhost".isValidEmail())
+        XCTAssertFalse("asdf+fdas@localhost.".isValidEmail())
+        XCTAssertTrue("asdf+fda@local.host.org".isValidEmail())
+        XCTAssertTrue("asdf+fda@local.host.co.uk".isValidEmail())
+        XCTAssertTrue("asdf12@localhost".isValidEmail())
+        XCTAssertTrue("asdf21+fdas4@localhost".isValidEmail())
+        XCTAssertTrue("asdf+fda@local.host.org".isValidEmail())
+        XCTAssertTrue("asdf+fda@127.0.0.1".isValidEmail())
+    }
+    
+}

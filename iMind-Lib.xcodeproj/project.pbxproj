@@ -11,7 +11,8 @@
 		4D3C04591E2770500037DE7E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04561E2770500037DE7E /* Date+Extensions.swift */; };
 		4D3C045A1E2770500037DE7E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04571E2770500037DE7E /* String+Extensions.swift */; };
 		4D3C045B1E2770500037DE7E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04571E2770500037DE7E /* String+Extensions.swift */; };
-		4D73E5CA1E1FAB4D00370EA7 /* iMind-Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */; };
+		4D3C04611E2776D60037DE7E /* String+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04601E2776D60037DE7E /* String+ExtensionsTest.swift */; };
+		4D73E5CA1E1FAB4D00370EA7 /* iMindLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */; };
 		4D73E5CF1E1FAB4D00370EA7 /* iMind_LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D73E5CE1E1FAB4D00370EA7 /* iMind_LibTests.swift */; };
 		4D73E5D11E1FAB4D00370EA7 /* iMind-Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D73E5C31E1FAB4D00370EA7 /* iMind-Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -29,10 +30,11 @@
 /* Begin PBXFileReference section */
 		4D3C04561E2770500037DE7E /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "Extensions/Date+Extensions.swift"; sourceTree = "<group>"; };
 		4D3C04571E2770500037DE7E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
-		4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "iMind-Lib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3C04601E2776D60037DE7E /* String+ExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+ExtensionsTest.swift"; path = "Extensions/String+ExtensionsTest.swift"; sourceTree = "<group>"; };
+		4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMindLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73E5C31E1FAB4D00370EA7 /* iMind-Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMind-Lib.h"; sourceTree = "<group>"; };
 		4D73E5C41E1FAB4D00370EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D73E5C91E1FAB4D00370EA7 /* iMind-LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iMind-LibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMindLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73E5CE1E1FAB4D00370EA7 /* iMind_LibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMind_LibTests.swift; sourceTree = "<group>"; };
 		4D73E5D01E1FAB4D00370EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D73E5CA1E1FAB4D00370EA7 /* iMind-Lib.framework in Frameworks */,
+				4D73E5CA1E1FAB4D00370EA7 /* iMindLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +63,14 @@
 			children = (
 				4D3C04561E2770500037DE7E /* Date+Extensions.swift */,
 				4D3C04571E2770500037DE7E /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4D3C045C1E2776440037DE7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C04601E2776D60037DE7E /* String+ExtensionsTest.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -77,8 +87,8 @@
 		4D73E5C11E1FAB4D00370EA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */,
-				4D73E5C91E1FAB4D00370EA7 /* iMind-LibTests.xctest */,
+				4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */,
+				4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 		4D73E5CD1E1FAB4D00370EA7 /* iMind-LibTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D3C045C1E2776440037DE7E /* Extensions */,
 				4D73E5CE1E1FAB4D00370EA7 /* iMind_LibTests.swift */,
 				4D73E5D01E1FAB4D00370EA7 /* Info.plist */,
 			);
@@ -116,9 +127,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D73E5BF1E1FAB4C00370EA7 /* iMind-Lib */ = {
+		4D73E5BF1E1FAB4C00370EA7 /* iMindLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMind-Lib" */;
+			buildConfigurationList = 4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib" */;
 			buildPhases = (
 				4D73E5BB1E1FAB4C00370EA7 /* Sources */,
 				4D73E5BC1E1FAB4C00370EA7 /* Frameworks */,
@@ -129,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = "iMind-Lib";
+			name = iMindLib;
 			productName = "iMind-Lib";
-			productReference = 4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */;
+			productReference = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4D73E5C81E1FAB4D00370EA7 /* iMind-LibTests */ = {
+		4D73E5C81E1FAB4D00370EA7 /* iMindLibTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMind-LibTests" */;
+			buildConfigurationList = 4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests" */;
 			buildPhases = (
 				4D73E5C51E1FAB4D00370EA7 /* Sources */,
 				4D73E5C61E1FAB4D00370EA7 /* Frameworks */,
@@ -147,9 +158,9 @@
 			dependencies = (
 				4D73E5CC1E1FAB4D00370EA7 /* PBXTargetDependency */,
 			);
-			name = "iMind-LibTests";
+			name = iMindLibTests;
 			productName = "iMind-LibTests";
-			productReference = 4D73E5C91E1FAB4D00370EA7 /* iMind-LibTests.xctest */;
+			productReference = 4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -187,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D73E5BF1E1FAB4C00370EA7 /* iMind-Lib */,
-				4D73E5C81E1FAB4D00370EA7 /* iMind-LibTests */,
+				4D73E5BF1E1FAB4C00370EA7 /* iMindLib */,
+				4D73E5C81E1FAB4D00370EA7 /* iMindLibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3C04611E2776D60037DE7E /* String+ExtensionsTest.swift in Sources */,
 				4D73E5CF1E1FAB4D00370EA7 /* iMind_LibTests.swift in Sources */,
 				4D3C045B1E2770500037DE7E /* String+Extensions.swift in Sources */,
 				4D3C04591E2770500037DE7E /* Date+Extensions.swift in Sources */,
@@ -235,7 +247,7 @@
 /* Begin PBXTargetDependency section */
 		4D73E5CC1E1FAB4D00370EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4D73E5BF1E1FAB4C00370EA7 /* iMind-Lib */;
+			target = 4D73E5BF1E1FAB4C00370EA7 /* iMindLib */;
 			targetProxy = 4D73E5CB1E1FAB4D00370EA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -421,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMind-Lib" */ = {
+		4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73E5D51E1FAB4D00370EA7 /* Debug */,
@@ -430,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMind-LibTests" */ = {
+		4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73E5D81E1FAB4D00370EA7 /* Debug */,

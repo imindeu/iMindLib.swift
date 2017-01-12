@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import iMind_Lib
+@testable import iMindLib
 
 class iMind_LibTests: XCTestCase {
     
