@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3C04581E2770500037DE7E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04561E2770500037DE7E /* Date+Extensions.swift */; };
+		4D3C04591E2770500037DE7E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04561E2770500037DE7E /* Date+Extensions.swift */; };
+		4D3C045A1E2770500037DE7E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04571E2770500037DE7E /* String+Extensions.swift */; };
+		4D3C045B1E2770500037DE7E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C04571E2770500037DE7E /* String+Extensions.swift */; };
 		4D73E5CA1E1FAB4D00370EA7 /* iMind-Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */; };
 		4D73E5CF1E1FAB4D00370EA7 /* iMind_LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D73E5CE1E1FAB4D00370EA7 /* iMind_LibTests.swift */; };
 		4D73E5D11E1FAB4D00370EA7 /* iMind-Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D73E5C31E1FAB4D00370EA7 /* iMind-Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3C04561E2770500037DE7E /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "Extensions/Date+Extensions.swift"; sourceTree = "<group>"; };
+		4D3C04571E2770500037DE7E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
 		4D73E5C01E1FAB4D00370EA7 /* iMind-Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "iMind-Lib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73E5C31E1FAB4D00370EA7 /* iMind-Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMind-Lib.h"; sourceTree = "<group>"; };
 		4D73E5C41E1FAB4D00370EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D3C04551E276FB30037DE7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C04561E2770500037DE7E /* Date+Extensions.swift */,
+				4D3C04571E2770500037DE7E /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		4D73E5B61E1FAB4C00370EA7 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +86,7 @@
 		4D73E5C21E1FAB4D00370EA7 /* iMind-Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4D3C04551E276FB30037DE7E /* Extensions */,
 				4D73E5C31E1FAB4D00370EA7 /* iMind-Lib.h */,
 				4D73E5C41E1FAB4D00370EA7 /* Info.plist */,
 			);
@@ -149,6 +165,7 @@
 					4D73E5BF1E1FAB4C00370EA7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VKKM3M85G8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					4D73E5C81E1FAB4D00370EA7 = {
@@ -198,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3C045A1E2770500037DE7E /* String+Extensions.swift in Sources */,
+				4D3C04581E2770500037DE7E /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D73E5CF1E1FAB4D00370EA7 /* iMind_LibTests.swift in Sources */,
+				4D3C045B1E2770500037DE7E /* String+Extensions.swift in Sources */,
+				4D3C04591E2770500037DE7E /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VKKM3M85G8;
@@ -335,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.iMind.iMind-Lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VKKM3M85G8;
@@ -362,6 +386,7 @@
 		4D73E5D81E1FAB4D00370EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VKKM3M85G8;
 				INFOPLIST_FILE = "iMind-LibTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +399,7 @@
 		4D73E5D91E1FAB4D00370EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VKKM3M85G8;
 				INFOPLIST_FILE = "iMind-LibTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
