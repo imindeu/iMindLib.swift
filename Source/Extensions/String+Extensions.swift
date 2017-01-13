@@ -5,6 +5,7 @@
 //  Created by Rezessy Miklós on 2016. 05. 10..
 //  Copyright © 2016. iMind. All rights reserved.
 //
+#if !os(macOS) && !os(Linux)
 
 import Foundation
 import UIKit
@@ -61,3 +62,5 @@ extension String {
     }
 
 }
+
+#endif

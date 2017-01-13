@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'iMind-Lib'
   s.version = '1.0.0'
-  s.license = { type: 'MIT', file: 'LICENCE' }
-  s.summary = 'iMind's Swift Library'
+  s.license = { type: 'MIT', file: 'LICENSE' }
+  s.summary = 'iMind\'s Swift Library'
   s.homepage = 'https://github.com/imindeu/iMind-Lib.swift'
   s.social_media_url = 'http://twitter.com/imindeu'
   s.authors = { 'iMind developers' => 'hello@imind.eu' }

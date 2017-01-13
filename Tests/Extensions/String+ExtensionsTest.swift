@@ -5,6 +5,7 @@
 //  Created by Révész Ádám on 2017. 01. 12..
 //  Copyright © 2017. iMind. All rights reserved.
 //
+#if !os(macOS) && !os(Linux)
 
 import XCTest
 @testable import iMindLib
@@ -30,3 +31,5 @@ class StringExtensionsTest: XCTestCase {
     }
     
 }
+
+#endif
