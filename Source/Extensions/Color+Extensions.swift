@@ -6,7 +6,7 @@
 //  Copyright © 2017. iMind. All rights reserved.
 //
 
-#if !os(macOS)
+#if !os(macOS) && !os(Linux)
     
 import UIKit
 

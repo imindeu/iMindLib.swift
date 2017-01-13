@@ -6,6 +6,8 @@
 //  Copyright © 2017. iMind. All rights reserved.
 //
 
+#if !os(macOS) && !os(Linux)
+
 import XCTest
 
 @testable import iMindLib
@@ -79,3 +81,5 @@ class ColorExtensionsTest: XCTestCase {
         XCTAssertTrue(UIColor.red.lighten(33).lighter(than: UIColor.red))
     }
 }
+
+#endif

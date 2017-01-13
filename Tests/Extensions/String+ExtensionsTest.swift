@@ -11,16 +11,6 @@ import XCTest
 
 class StringExtensionsTest: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testPasswordValidator() {
         XCTAssertFalse("asdf".isValidPassword(), "Passwords under 6 chars long are meant to be invalid.")
         XCTAssert("asdfgh".isValidPassword(), "Passwords at least 6 chars long are meant to be valid.")
