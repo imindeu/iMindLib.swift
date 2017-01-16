@@ -12,29 +12,7 @@ import UIKit
 
 public extension UIColor {
     
-    // MARK: Properties
-    
-    /// The red component of color's RGBA representation.
-    public var redComponent: Int {
-        return Int(component(0) * 255.0)
-    }
-    
-    /// The green component of color's RGBA representation.
-    public var greenComponent: Int {
-        return Int(component(1) * 255.0)
-    }
-    
-    /// The blue component of color's RGBA representation.
-    public var blueComponent: Int {
-        return Int(component(2) * 255.0)
-    }
-    
-    /// The alpha channel of color's RGBA representation.
-    public var alphaComponent: CGFloat {
-        return CGFloat(component(3))
-    }
-    
-    // MARK: Object creation
+    // MARK: Creating and Initializing Color Objects
     
     /// Initializes and returns a color object using RGB component values as Int and an optional opacity value.
     /// - Parameter red: The red value of the color object. Red values below 0 are interpreted as 0, and values above 255 are interpreted as 255.
@@ -70,7 +48,29 @@ public extension UIColor {
 
     }
     
-    // MARK: Handling lighter, darker colors
+    // MARK: RGBA Components
+    
+    /// The red component of color's RGBA representation.
+    public var redComponent: Int {
+        return Int(component(0) * 255.0)
+    }
+    
+    /// The green component of color's RGBA representation.
+    public var greenComponent: Int {
+        return Int(component(1) * 255.0)
+    }
+    
+    /// The blue component of color's RGBA representation.
+    public var blueComponent: Int {
+        return Int(component(2) * 255.0)
+    }
+    
+    /// The alpha channel of color's RGBA representation.
+    public var alphaComponent: CGFloat {
+        return CGFloat(component(3))
+    }
+    
+    // MARK: Handling Lighter and Darker Colors
     
     /// Creates a darker color from the receiver by altering it's brightness by a percent (using the HSBA color space).
     /// - Parameter percent: The percentage for decreasing brightness. Values below 0 are interpreted as 0, and values above 100 are interpreted as 100.
@@ -104,7 +104,7 @@ public extension UIColor {
 
 }
 
-// MARK: Private properties and methods
+// MARK: Private Properties and Methods
 fileprivate extension UIColor {
     typealias HSBA = (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
     
