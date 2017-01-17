@@ -67,10 +67,14 @@ class ColorExtensionsTest: XCTestCase {
     
     func testDarker() {
         XCTAssertTrue(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.3, alpha: 1.0).darker(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0)))
+        XCTAssertFalse(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0).darker(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.3, alpha: 1.0)))
+        XCTAssertFalse(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0).darker(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0)))
     }
     
     func testLighter() {
         XCTAssertTrue(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0).lighter(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.3, alpha: 1.0)))
+        XCTAssertFalse(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.3, alpha: 1.0).lighter(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0)))
+        XCTAssertFalse(UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0).lighter(than: UIColor(hue: 0.2, saturation: 0.5, brightness: 0.5, alpha: 1.0)))
     }
     
     func testDarken() {
