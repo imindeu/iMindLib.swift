@@ -8,9 +8,17 @@
 
 import UIKit
 
-extension UIViewController: ErrorPresenter {
+extension UIViewController {
     
-    func showError(level: String, message: String, onlyDebug: Bool = false) {
+    // MARK: Presenting and reporting messages
+    
+    /**
+     Presents the level and the message in a custom presenter or in a UIAlertViewController as default
+     - parameter level: The level of the info. The value can be a LevelType which appears as a string like e.g. "Error" or "Warning"
+     - parameter messsage: The main content of the message. The value can be a custom string.
+     */
+
+    func showInfo(level: LevelType, message: String, onlyDebug: Bool = false, shouldReport: Bool = true) {
         
         #if DEBUG
             let debugActive = true
@@ -19,10 +27,22 @@ extension UIViewController: ErrorPresenter {
         #endif
         
         if !onlyDebug || (onlyDebug && debugActive) {
-            let alertController = UIAlertController(title: level, message: message, preferredStyle: .alert)
-            let dismissAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(dismissAction)
-            self.present(alertController, animated: true, completion: nil)
+            if let infoPresenter = self as? InfoPresenter {
+                infoPresenter.presentInfo(level: level, message: message)
+            } else {
+                let alertController = UIAlertController(title: level.rawValue, message: message, preferredStyle: .alert)
+                let dismissAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(dismissAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+        
+        if !debugActive && shouldReport {
+            if let reporter = self as? InfoReporter {
+                reporter.reportInfo(level: level, message: message)
+            }
         }
     }
+    
+    
 }

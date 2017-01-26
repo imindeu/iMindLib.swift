@@ -9,26 +9,46 @@
 import XCTest
 @testable import iMindLib
 
-class DummyErrorPresenter: ErrorPresenter {
+class DummyErrorPresenter: InfoPresenter {
     
-    var errorInfo: [String:String] = [:]
+    var attributes: [String:String] = [:]
     
-    func showError(level: String, message: String, onlyDebug: Bool = false) {
-        errorInfo["level"] = level
-        errorInfo["message"] = message
+    func presentInfo(level: LevelType, message: String) {
+        attributes["level"] = level.rawValue
+        attributes["message"] = message
         
-        print("Level: \(errorInfo["level"]) \nMessage: \(errorInfo["message"])")
+        print("Level: \(attributes["level"]) \nMessage: \(attributes["message"])")
+    }
+}
+
+class DummyInfoReporter: InfoReporter {
+    
+    var attributes: [String:String] = [:]
+    
+    func reportInfo(level: LevelType, message: String) {
+        attributes["level"] = level.rawValue
+        attributes["message"] = message
+        
+        print("Level: \(attributes["level"]) \nMessage: \(attributes["message"])")
     }
 }
 
 class UIViewControllerExtensionsTest: XCTestCase {
  
-    func testShowError() {
+    func testPresentInfo() {
         let presenter = DummyErrorPresenter()
-        presenter.showError(level: "Error", message: "This is a test error")
+        presenter.presentInfo(level: .error, message: "This is a test error")
         
-        XCTAssertEqual(presenter.errorInfo["level"], "Error")
-        XCTAssertEqual(presenter.errorInfo["message"], "This is a test error")
+        XCTAssertEqual(presenter.attributes["level"], "Error")
+        XCTAssertEqual(presenter.attributes["message"], "This is a test error")
         
+    }
+    
+    func testReportInfo() {
+        let reporter = DummyInfoReporter()
+        reporter.reportInfo(level: .error, message: "This is a test error")
+        
+        XCTAssertEqual(reporter.attributes["level"], "Error")
+        XCTAssertEqual(reporter.attributes["message"], "This is a test error")
     }
 }
