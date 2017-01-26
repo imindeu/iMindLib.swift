@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/Date+Extensions.swift",
+      "line": 12,
+      "symbol": "Date.Date",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/Date+Extensions.swift",
+      "line": 13,
+      "symbol": "Date.Date.formatterShortDate",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/Date+Extensions.swift",
+      "line": 15,
+      "symbol": "Date.shortDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/Date+Extensions.swift",
+      "line": 19,
+      "symbol": "Date.timeAgoSinceDate(numericDates:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/Date+Extensions.swift",
+      "line": 86,
+      "symbol": "DateFormatter.init(dateFormat:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 15,
+      "symbol": "String.isValidEmail()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 24,
+      "symbol": "String.isValidPassword()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 28,
+      "symbol": "String.attributedStringForTags(_:fontSize:fontColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 43,
+      "symbol": "String.htmlFormattedString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 54,
+      "symbol": "String.trim()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Extensions/String+Extensions.swift",
+      "line": 58,
+      "symbol": "String.capitalizingFirstLetter()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/gregormate/Projects/Extras/iMind-Lib.swift"
+}
