@@ -76,6 +76,76 @@
       "symbol": "String.capitalizingFirstLetter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 11,
+      "symbol": "InfoPresenter",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 13,
+      "symbol": "InfoPresenter.presentInfo(level:message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 16,
+      "symbol": "LevelType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 17,
+      "symbol": "LevelType.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 18,
+      "symbol": "LevelType.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 19,
+      "symbol": "LevelType.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 20,
+      "symbol": "LevelType.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoPresenter.swift",
+      "line": 21,
+      "symbol": "LevelType.alert",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoReporter.swift",
+      "line": 11,
+      "symbol": "InfoReporter",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gregormate/Projects/Extras/iMind-Lib.swift/Source/Protocols/InfoReporter.swift",
+      "line": 13,
+      "symbol": "InfoReporter.reportInfo(level:message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/gregormate/Projects/Extras/iMind-Lib.swift"
