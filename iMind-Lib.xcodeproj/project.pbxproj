@@ -15,6 +15,7 @@
 		11657BB21E2925F10078E8CB /* Color+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BA91E2925BD0078E8CB /* Color+ExtensionsTest.swift */; };
 		11657BB31E2925F50078E8CB /* String+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BAA1E2925BD0078E8CB /* String+ExtensionsTest.swift */; };
 		4D73E5CA1E1FAB4D00370EA7 /* iMindLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */; };
+		84176EBA1E3A2DA4008363A2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84176EB91E3A2DA4008363A2 /* UIImage+Extension.swift */; };
 		D71BE0061E3745B800AE4B3C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BE0051E3745B800AE4B3C /* UIViewController+Extensions.swift */; };
 		D71BE0091E37460C00AE4B3C /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BE0081E37460C00AE4B3C /* InfoPresenter.swift */; };
 		D71BE00C1E3746FB00AE4B3C /* UIViewController+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BE00A1E37464E00AE4B3C /* UIViewController+ExtensionsTest.swift */; };
@@ -45,6 +46,7 @@
 		11657BAC1E2925BD0078E8CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMindLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMindLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84176EB91E3A2DA4008363A2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D71BE0051E3745B800AE4B3C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D71BE0081E37460C00AE4B3C /* InfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		D71BE00A1E37464E00AE4B3C /* UIViewController+ExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ExtensionsTest.swift"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				11657B9F1E2925B00078E8CB /* Date+Extensions.swift */,
 				11657BA01E2925B00078E8CB /* String+Extensions.swift */,
 				D71BE0051E3745B800AE4B3C /* UIViewController+Extensions.swift */,
+				84176EB91E3A2DA4008363A2 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				4D73E5BC1E1FAB4C00370EA7 /* Frameworks */,
 				4D73E5BD1E1FAB4C00370EA7 /* Headers */,
 				4D73E5BE1E1FAB4C00370EA7 /* Resources */,
+				84BD05721E3A037700BA6DF4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,12 +255,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84BD05721E3A037700BA6DF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D73E5BB1E1FAB4C00370EA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D71BE0061E3745B800AE4B3C /* UIViewController+Extensions.swift in Sources */,
+				84176EBA1E3A2DA4008363A2 /* UIImage+Extension.swift in Sources */,
 				D77FA6311E39EC12005996AA /* InfoReporter.swift in Sources */,
 				D71BE0091E37460C00AE4B3C /* InfoPresenter.swift in Sources */,
 				11657BA31E2925B00078E8CB /* Color+Extensions.swift in Sources */,
