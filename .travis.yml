@@ -1,0 +1,9 @@
+branches:
+    only:
+        - master
+
+language: objective-c
+osx_image: xcode8.2
+xcode_project: iMind-Lib.xcodeproj
+xcode_scheme: iMind-Lib-iOS
+xcode_sdk: iphonesimulator10.1
