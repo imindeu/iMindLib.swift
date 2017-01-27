@@ -4,4 +4,3 @@ import XCTest
 XCTMain([
      testCase(iMind_LibTests.allTests)
 ])
-

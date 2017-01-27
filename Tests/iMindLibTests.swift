@@ -9,9 +9,9 @@
 import XCTest
 @testable import iMindLib
 
-class iMindLibTests: XCTestCase {
+class IMindLibTests: XCTestCase {
 
-    static var allTests : [(String, (iMindLibTests) -> () throws -> Void)] {
+    static var allTests: [(String, (IMindLibTests) -> () throws -> Void)] {
         return [
         ]
     }
