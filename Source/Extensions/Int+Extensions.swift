@@ -17,17 +17,16 @@ public extension Int {
         - returns: The abbreviated string object
      */
     public func abbreviate() -> String {
-        var doubleValue = Double(self)
-        let sign = ((doubleValue < 0) ? "-" : "" )
+        let absValue = abs(self)
+        let sign = self < 0 ? "-" : ""
         
-        doubleValue = fabs(doubleValue)
-        
-        if (doubleValue < 1000.0){
-            return "\(sign)\(self)"
+        if absValue < 1000 {
+            return "\(sign)\(absValue)"
         }
         
+        let doubleValue = Double(absValue)
         let exp = Int(log10(doubleValue) / 3.0 )
-        let units = ["k","M","G","T","P","E"]
+        let units = ["k", "M", "G", "T", "P", "E"]
         let roundedValue = round(10 * doubleValue / pow(1000.0, Double(exp))) / 10
         
         return "\(sign)\(Int(roundedValue))\(units[exp-1])"
@@ -41,24 +40,23 @@ public extension Int {
         let romanValues = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         let arabicValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
         
-        var romanValue = ""
         var startingValue = self
-        
-        for (index, romanChar) in romanValues.enumerated() {
-            let arabicValue = arabicValues[index]
+        return romanValues.enumerated().reduce("", { (r, e) -> String in
+            let arabicValue = arabicValues[e.offset]
+            let romanChar = e.element
             let div = startingValue / arabicValue
             
-            if (div > 0) {
-                for _ in 0..<div {
-                    romanValue += romanChar
-                }
+            if div > 0 {
                 startingValue -= arabicValue * div
+                return (0..<div).reduce(r, { (c, _) -> String in
+                    c + romanChar
+                })
             }
-        }
-        
-        return romanValue
+            
+            return r
+        })
     }
-    
+
 }
 
 #endif
