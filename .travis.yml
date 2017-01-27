@@ -8,6 +8,9 @@ xcode_project: iMindLib.xcodeproj
 xcode_scheme: iMindLib-iOS
 xcode_sdk: iphonesimulator10.1
 
+notifications:
+  slack: imind:VmxAeQTYy3BrScWr40M1lTT7
+
 install:
     - ./install_swiftlint.sh
 
