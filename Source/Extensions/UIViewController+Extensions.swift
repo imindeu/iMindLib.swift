@@ -14,7 +14,8 @@ extension UIViewController {
     
     /**
      Presents the level and the message in a custom presenter or in a UIAlertViewController as default
-     - parameter level: The level of the info. The value can be a LevelType which appears as a string like e.g. "Error" or "Warning"
+     - parameter level: The level of the info. 
+        The value can be a LevelType which appears as a string like e.g. "Error" or "Warning"
      - parameter messsage: The main content of the message. The value can be a custom string.
      */
 
@@ -43,6 +44,4 @@ extension UIViewController {
             }
         }
     }
-    
-    
 }

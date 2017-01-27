@@ -10,7 +10,7 @@ import Foundation
 
 protocol InfoPresenter {
     
-    func presentInfo(level: LevelType, message: String) -> ()    
+    func presentInfo(level: LevelType, message: String)
 }
 
 enum LevelType: String {
@@ -20,4 +20,3 @@ enum LevelType: String {
     case debug = "Debug"
     case alert = "Alert"
 }
-

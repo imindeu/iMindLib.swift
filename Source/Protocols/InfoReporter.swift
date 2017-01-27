@@ -10,5 +10,5 @@ import Foundation
 
 protocol InfoReporter {
     
-    func reportInfo(level: LevelType, message: String) -> ()
+    func reportInfo(level: LevelType, message: String)
 }
