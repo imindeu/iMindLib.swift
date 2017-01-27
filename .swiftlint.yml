@@ -2,6 +2,6 @@ disabled_rules:
 - trailing_whitespace
 opt_in_rules:
 - force_unwrapping
-  #- missing_docs
+#- missing_docs
 - redundant_nil_coalescing
 - switch_case_on_newline
