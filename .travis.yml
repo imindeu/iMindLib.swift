@@ -15,5 +15,6 @@ install:
     - ./install_swiftlint.sh
 
 script:
-    - xcodebuild -project iMindLib.xcodeproj -scheme iMindLib-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -configuration Release ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+    - xcodebuild -project iMindLib.xcodeproj -scheme iMindLib-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -enableCodeCoverage YES test CODE_SIGNING_REQUIRED=NO
+after_success:
     - bash <(curl -s https://codecov.io/bash) -cF ios
