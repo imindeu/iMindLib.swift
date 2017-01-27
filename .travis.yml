@@ -7,3 +7,9 @@ osx_image: xcode8.2
 xcode_project: iMind-Lib.xcodeproj
 xcode_scheme: iMind-Lib-iOS
 xcode_sdk: iphonesimulator10.1
+
+install:
+    - ./install_swiftlint.sh
+
+script:
+    - xcodebuild clean build -sdk iphonesimulator -project iMind-Lib.xcodeproj -scheme iMind-Lib-iOS CODE_SIGNING_REQUIRED=NO
