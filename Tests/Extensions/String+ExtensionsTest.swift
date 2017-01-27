@@ -1,6 +1,6 @@
 //
-//  iMind_LibTests.swift
-//  iMind-LibTests
+//  iMindLibTests.swift
+//  iMindLibTests
 //
 //  Created by Révész Ádám on 2017. 01. 12..
 //  Copyright © 2017. iMind. All rights reserved.

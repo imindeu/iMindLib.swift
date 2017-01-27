@@ -1,6 +1,6 @@
 //
 //  UIImage+Extension.swift
-//  iMind-Lib
+//  iMindLib
 //
 //  Created by David Frenkel on 26/01/2017.
 //  Copyright © 2017 iMind. All rights reserved.

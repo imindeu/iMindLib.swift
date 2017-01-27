@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
                BuildableName = "iMindLib.framework"
                BlueprintName = "iMindLib"
-               ReferencedContainer = "container:iMind-Lib.xcodeproj">
+               ReferencedContainer = "container:iMindLib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "4D73E5C81E1FAB4D00370EA7"
                BuildableName = "iMindLibTests.xctest"
                BlueprintName = "iMindLibTests"
-               ReferencedContainer = "container:iMind-Lib.xcodeproj">
+               ReferencedContainer = "container:iMindLib.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
             BuildableName = "iMindLib.framework"
             BlueprintName = "iMindLib"
-            ReferencedContainer = "container:iMind-Lib.xcodeproj">
+            ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
             BuildableName = "iMindLib.framework"
             BlueprintName = "iMindLib"
-            ReferencedContainer = "container:iMind-Lib.xcodeproj">
+            ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
             BuildableName = "iMindLib.framework"
             BlueprintName = "iMindLib"
-            ReferencedContainer = "container:iMind-Lib.xcodeproj">
+            ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

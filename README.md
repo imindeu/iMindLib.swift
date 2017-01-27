@@ -1,6 +1,6 @@
-# iMind-Lib.swift
+# iMindLib.swift
 
-[![Build Status](https://travis-ci.org/imindeu/iMind-Lib.swift.svg?branch=master)](https://travis-ci.org/imindeu/iMind-Lib.swift)
+[![Build Status](https://travis-ci.org/imindeu/iMindLib.swift.svg?branch=master)](https://travis-ci.org/imindeu/iMindLib.swift)
 
 The iMind swift library.
 

@@ -18,7 +18,7 @@ jazzy \
 	--readme ../README.md \
 	--author iMind \
   	--author_url "http://www.imind.eu" \
-  	--github_url "https://github.com/imindeu/iMind-Lib.swift"
+  	--github_url "https://github.com/imindeu/iMindLib.swift"
 
 echo
 echo "==============="

@@ -1,7 +1,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "iMind-Lib",
+    name: "iMindLib",
     dependencies: [],
     exclude: ["Tests"]
 )

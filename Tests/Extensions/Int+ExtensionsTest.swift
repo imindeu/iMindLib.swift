@@ -1,6 +1,6 @@
 //
 //  Int+ExtensionsTest.swift
-//  iMind-Lib
+//  iMindLib
 //
 //  Created by Mate Gregor on 2017. 01. 26..
 //  Copyright © 2017. iMind. All rights reserved.

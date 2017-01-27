@@ -1,6 +1,6 @@
 //
 //  ErrorPresenter.swift
-//  iMind-Lib
+//  iMindLib
 //
 //  Created by Rezessy Miklós on 2017. 01. 24..
 //  Copyright © 2017. iMind. All rights reserved.
