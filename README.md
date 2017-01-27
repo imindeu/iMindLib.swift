@@ -1,11 +1,14 @@
 # iMind-Lib.swift
+
+[![Build Status](https://travis-ci.org/imindeu/iMind-Lib.swift.svg?branch=master)](https://travis-ci.org/imindeu/iMind-Lib.swift)
+
 The iMind swift library.
 
 ---
 ## SwiftLint
 If you don't have SwiftLint installed you can install is via:
 **Homebrew**
-``` 
+```
  brew install swiftlint
 ```
 and if you don't have Homebrew:
