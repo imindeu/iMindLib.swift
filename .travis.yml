@@ -3,7 +3,7 @@ branches:
         - master
 
 language: objective-c
-osx_image: xcode8.2
+osx_image: xcode8.1
 xcode_project: iMindLib.xcodeproj
 xcode_scheme: iMindLib-iOS
 xcode_sdk: iphonesimulator10.1
