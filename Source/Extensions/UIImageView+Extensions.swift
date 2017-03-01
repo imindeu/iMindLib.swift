@@ -20,8 +20,6 @@ extension UIImageView {
         self.alpha = startAlpha
         UIView.animate(withDuration: 0.4, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.alpha = endAlpha
-        }) { _ in
-            self.alpha = startAlpha
-        }
+        })
     }
 }

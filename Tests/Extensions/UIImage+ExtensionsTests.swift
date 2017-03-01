@@ -61,4 +61,11 @@ class UIImageExtensionsTests: XCTestCase {
         let newImage = testImage?.tintWithColor(color: UIColor.red)
         XCTAssertNotNil(newImage)
     }
+    
+    func testTranslucency() {
+        let testImage = UIImage(named: "testImage.jpg", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        let newAlpha = CGFloat(integerLiteral: 10)
+        let newImage = testImage?.setTranlucent(with: newAlpha)
+        XCTAssertNotNil(newImage)
+    }
 }
