@@ -1,6 +1,5 @@
 //
 //  NSDate+Extensions.swift
-//  Quideo
 //
 //  Created by Rezessy Miklós on 2016. 06. 24..
 //  Copyright © 2016. iMind. All rights reserved.
@@ -10,34 +9,14 @@ import Foundation
 
 extension Date {
     
-    func timeAgoSinceDate(numericDates:Bool) -> String {
-        let calendar = Calendar.current
-        let now = Foundation.Date()
-        let earliest = (now as NSDate).earlierDate(self)
-        let latest = (earliest == now) ? self : now
-        let components: DateComponents =
-            (calendar as NSCalendar).components(
-                [
-                    NSCalendar.Unit.minute,
-                    NSCalendar.Unit.hour,
-                    NSCalendar.Unit.day,
-                    NSCalendar.Unit.weekOfYear,
-                    NSCalendar.Unit.month,
-                    NSCalendar.Unit.year,
-                    NSCalendar.Unit.second
-                ],
-                from: earliest, to: latest, options: NSCalendar.Options())
+    fileprivate func longTimeAgoSinceDate(_ numericDates: Bool, components: DateComponents) -> String? {
         guard
             let cYear = components.year,
-            let cMonth = components.month,
-            let cWeekOfYear = components.weekOfYear,
-            let cDay = components.day,
-            let cHour = components.hour,
-            let cMinute = components.minute,
-            let cSecond = components.second
+            let cMonth = components.month
         else {
-            return "Just now"
+            return nil
         }
+        
         if cYear >= 2 {
             return "\(cYear) years ago"
         } else if cYear >= 1 {
@@ -54,7 +33,20 @@ extension Date {
             } else {
                 return "Last month"
             }
-        } else if cWeekOfYear >= 2 {
+        } else {
+            return nil
+        }
+    }
+    
+    fileprivate func midTimeAgoSinceDate(_ numericDates: Bool, components: DateComponents) -> String? {
+        guard
+            let cWeekOfYear = components.weekOfYear,
+            let cDay = components.day
+        else {
+            return nil
+        }
+        
+        if cWeekOfYear >= 2 {
             return "\(cWeekOfYear) weeks ago"
         } else if cWeekOfYear >= 1 {
             if numericDates {
@@ -64,13 +56,26 @@ extension Date {
             }
         } else if cDay >= 2 {
             return "\(cDay) days ago"
-        } else if components.day! >= 1 {
+        } else if cDay >= 1 {
             if numericDates {
                 return "1 day ago"
             } else {
                 return "Yesterday"
             }
-        } else if cHour >= 2 {
+        } else {
+            return nil
+        }
+    }
+    
+    fileprivate func shortTimeAgoSinceDate(_ numericDates: Bool, components: DateComponents) -> String? {
+        guard
+            let cHour = components.hour,
+            let cMinute = components.minute,
+            let cSecond = components.second
+            else {
+                return nil
+        }
+        if cHour >= 2 {
             return "\(cHour) hours ago"
         } else if cHour >= 1 {
             if numericDates {
@@ -89,8 +94,57 @@ extension Date {
         } else if cSecond >= 3 {
             return "\(cSecond) seconds ago"
         } else {
+            return nil
+        }
+    }
+    
+    /// Pretty prints time ago since the date until now like "An hour ago"
+    ///  - parameter numericDates: tells wether it has to give strings like "1 day ago"
+    ///    instead of "Yesterday".
+    ///  - parameter inTerm: tells wich terms sould be displayed correctly instead of "Long ago"
+    ///  - returns: the string representation
+    func timeAgoSinceDate(numericDates: Bool, inTerm term: TimeTerm = .long) -> String {
+        let calendar = Calendar.current
+        let now = Foundation.Date()
+        let earliest = (now as NSDate).earlierDate(self)
+        let latest = (earliest == now) ? self : now
+        let components: DateComponents =
+            (calendar as NSCalendar).components(
+                [
+                    NSCalendar.Unit.minute,
+                    NSCalendar.Unit.hour,
+                    NSCalendar.Unit.day,
+                    NSCalendar.Unit.weekOfYear,
+                    NSCalendar.Unit.month,
+                    NSCalendar.Unit.year,
+                    NSCalendar.Unit.second
+                ],
+                from: earliest, to: latest, options: NSCalendar.Options())
+        
+        if let result = longTimeAgoSinceDate(numericDates, components: components) {
+            switch term {
+            case .long:
+                return result
+            default:
+                return "Long ago"
+            }
+        } else if let result = midTimeAgoSinceDate(numericDates, components: components) {
+            switch term {
+            case .long, .mid:
+                return result
+            default:
+                return "Long ago"
+            }
+        } else if let result = shortTimeAgoSinceDate(numericDates, components: components) {
+            return result
+        } else {
             return "Just now"
         }
-        
     }
+}
+
+enum TimeTerm {
+    case short
+    case mid
+    case long
 }
