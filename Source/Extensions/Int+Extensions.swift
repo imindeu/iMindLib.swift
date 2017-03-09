@@ -12,10 +12,8 @@ import Foundation
 
 public extension Int {
     
-    /**
-        Converts to a shorter format
-        - returns: The abbreviated string object
-     */
+    /// Converts to a shorter format
+    /// - returns: The abbreviated string object
     public func abbreviate() -> String {
         let absValue = abs(self)
         let sign = self < 0 ? "-" : ""
@@ -32,10 +30,8 @@ public extension Int {
         return "\(sign)\(Int(roundedValue))\(units[exp-1])"
     }
     
-    /**
-        Converts to it's roman number format
-        - returns: The roman number string object
-     */
+    /// Converts to it's roman number format
+    /// - returns: The roman number string object
     public func toRoman() -> String {
         let romanValues = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         let arabicValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]

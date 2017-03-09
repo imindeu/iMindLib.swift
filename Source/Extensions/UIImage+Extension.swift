@@ -10,11 +10,9 @@ import UIKit
 
 extension UIImage {
     
-    /**
-     Creates an image at a new size size from a square image.
-     - parameter newSize: A CGSize object that represets the size the result image should be.
-     - returns: An optional UIImage of the new size.
-     */
+    /// Creates an image at a new size size from a square image.
+    /// - parameter newSize: A CGSize object that represets the size the result image should be.
+    /// - returns: An optional UIImage of the new size.
     func squareImageToSize(newSize: CGSize) -> UIImage? {
         var ratio: Double
         var delta: Double
@@ -54,11 +52,9 @@ extension UIImage {
         return newImage
     }
     
-    /**
-     Scales an image to a new size. 
-     - parameter newSize: a CGSize object that the result UImage size should be.
-     - returns: An optioal UIImage of the new scale.
-     */
+    /// Scales an image to a new size.
+    /// - parameter newSize: a CGSize object that the result UImage size should be.
+    /// - returns: An optioal UIImage of the new scale.
     func scaleToImage(with newSize: CGSize) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
         self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
@@ -69,11 +65,9 @@ extension UIImage {
         return image
     }
     
-    /**
-     Sets an image's translucency.
-     - parameter alpha: A CGFloat that will be the result image's translucency.
-     - returns: An optional UIImage of the new translucency.
-     */
+    /// Sets an image's translucency.
+    /// - parameter alpha: A CGFloat that will be the result image's translucency.
+    /// - returns: An optional UIImage of the new translucency.
     func setTranlucent(with alpha: CGFloat) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         draw(at: CGPoint.zero, blendMode: CGBlendMode.normal, alpha: alpha)
@@ -84,10 +78,8 @@ extension UIImage {
         return image
     }
     
-    /**
-     Corrects an image's orientation. Does nothing if .imageOrientation == UIImageOrientation.up
-     - returns: An optional UIImage.
-     */
+    /// Corrects an image's orientation. Does nothing if .imageOrientation == UIImageOrientation.up
+    /// - returns: An optional UIImage.
     func correctlyOrientedImage() -> UIImage? {
         if self.imageOrientation == UIImageOrientation.up {
             return self
@@ -102,11 +94,9 @@ extension UIImage {
         return image
     }
     
-    /**
-     Resizes an image to a new height.
-     - parameter newHeight: A CGFloat that the new image height should be.
-     - returns: An optional UIImage of the new height.
-     */
+    /// Resizes an image to a new height.
+    /// - parameter newHeight: A CGFloat that the new image height should be.
+    /// - returns: An optional UIImage of the new height.
     func resizeImage(to newHeight: CGFloat) -> UIImage? {
         let scale = newHeight / self.size.height
         let newWidth = self.size.width * scale
@@ -120,11 +110,9 @@ extension UIImage {
         return image
     }
     
-    /**
-     Center crops an image to the target size.
-     - parameter target: A CGSize that the result crop should be
-     - returns: An optional UIImage crop of the input image.
-     */
+    /// Center crops an image to the target size.
+    /// - parameter target: A CGSize that the result crop should be
+    /// - returns: An optional UIImage crop of the input image.
     func centerCropToSize(target: CGSize) -> UIImage? {
         let scale = max(target.width/self.size.width, target.height/self.size.height)
         let width = self.size.width * scale
@@ -139,11 +127,9 @@ extension UIImage {
         return image
     }
     
-    /**
-     Tints an image with a specified colour.
-     - parameter color: The specified color of the tint the result image should have.
-     - returns: An optional UIImage tinted to the specified colour.
-     */
+    /// Tints an image with a specified colour.
+    /// - parameter color: The specified color of the tint the result image should have.
+    /// - returns: An optional UIImage tinted to the specified colour.
     func tintWithColor(color: UIColor) -> UIImage? {
         
         UIGraphicsBeginImageContext(self.size)

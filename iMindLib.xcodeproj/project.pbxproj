@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1149A41E1E70535A00F63225 /* AtomicVariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1149A41D1E70535A00F63225 /* AtomicVariableTests.swift */; };
 		11657BA31E2925B00078E8CB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657B9E1E2925B00078E8CB /* Color+Extensions.swift */; };
 		11657BA41E2925B00078E8CB /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657B9F1E2925B00078E8CB /* Date+Extensions.swift */; };
 		11657BA51E2925B00078E8CB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BA01E2925B00078E8CB /* String+Extensions.swift */; };
@@ -14,6 +15,7 @@
 		11657BB11E2925EE0078E8CB /* iMindLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BAB1E2925BD0078E8CB /* iMindLibTests.swift */; };
 		11657BB21E2925F10078E8CB /* Color+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BA91E2925BD0078E8CB /* Color+ExtensionsTest.swift */; };
 		11657BB31E2925F50078E8CB /* String+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BAA1E2925BD0078E8CB /* String+ExtensionsTest.swift */; };
+		119163911E535F4C00DB041A /* AtomicVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119163901E535F4C00DB041A /* AtomicVariable.swift */; };
 		4D73E5CA1E1FAB4D00370EA7 /* iMindLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */; };
 		65CA45201E3A1025007A6A7F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA451F1E3A1025007A6A7F /* Int+Extensions.swift */; };
 		65CA45221E3A1037007A6A7F /* Int+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA45211E3A1037007A6A7F /* Int+ExtensionsTest.swift */; };
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1149A41D1E70535A00F63225 /* AtomicVariableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicVariableTests.swift; sourceTree = "<group>"; };
 		11657B9E1E2925B00078E8CB /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		11657B9F1E2925B00078E8CB /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		11657BA01E2925B00078E8CB /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		11657BAA1E2925BD0078E8CB /* String+ExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTest.swift"; sourceTree = "<group>"; };
 		11657BAB1E2925BD0078E8CB /* iMindLibTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMindLibTests.swift; sourceTree = "<group>"; };
 		11657BAC1E2925BD0078E8CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119163901E535F4C00DB041A /* AtomicVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicVariable.swift; sourceTree = "<group>"; };
 		4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMindLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMindLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CA451F1E3A1025007A6A7F /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1149A41C1E70532000F63225 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1149A41D1E70535A00F63225 /* AtomicVariableTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11657B9D1E2925B00078E8CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +103,8 @@
 				65CA451F1E3A1025007A6A7F /* Int+Extensions.swift */,
 				11657BA01E2925B00078E8CB /* String+Extensions.swift */,
 				84176EB91E3A2DA4008363A2 /* UIImage+Extension.swift */,
-				D71BE0051E3745B800AE4B3C /* UIViewController+Extensions.swift */,
 				8430BE0D1E51A92E006E9C9F /* UIImageView+Extensions.swift */,
+				D71BE0051E3745B800AE4B3C /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +121,14 @@
 				D71BE00A1E37464E00AE4B3C /* UIViewController+ExtensionsTest.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1191638F1E535F0D00DB041A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				119163901E535F4C00DB041A /* AtomicVariable.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4D73E5B61E1FAB4C00370EA7 = {
@@ -132,8 +152,9 @@
 		4D73E5C21E1FAB4D00370EA7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D71BE0071E3745ED00AE4B3C /* Protocols */,
 				11657B9D1E2925B00078E8CB /* Extensions */,
+				1191638F1E535F0D00DB041A /* Models */,
+				D71BE0071E3745ED00AE4B3C /* Protocols */,
 				11657BA11E2925B00078E8CB /* iMindLib-Swift.h */,
 				11657BA21E2925B00078E8CB /* Info.plist */,
 			);
@@ -144,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				11657BA81E2925BD0078E8CB /* Extensions */,
+				1149A41C1E70532000F63225 /* Models */,
 				11657BAB1E2925BD0078E8CB /* iMindLibTests.swift */,
 				11657BAC1E2925BD0078E8CB /* Info.plist */,
 			);
@@ -298,6 +320,7 @@
 				8430BE0E1E51A92E006E9C9F /* UIImageView+Extensions.swift in Sources */,
 				D71BE0091E37460C00AE4B3C /* InfoPresenter.swift in Sources */,
 				11657BA31E2925B00078E8CB /* Color+Extensions.swift in Sources */,
+				119163911E535F4C00DB041A /* AtomicVariable.swift in Sources */,
 				65CA45201E3A1025007A6A7F /* Int+Extensions.swift in Sources */,
 				11657BA51E2925B00078E8CB /* String+Extensions.swift in Sources */,
 				11657BA41E2925B00078E8CB /* Date+Extensions.swift in Sources */,
@@ -308,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1149A41E1E70535A00F63225 /* AtomicVariableTests.swift in Sources */,
 				D71BE00C1E3746FB00AE4B3C /* UIViewController+ExtensionsTest.swift in Sources */,
 				11657BB31E2925F50078E8CB /* String+ExtensionsTest.swift in Sources */,
 				84C879321E660052004004A8 /* UIImageView+ExtensionsTests.swift in Sources */,

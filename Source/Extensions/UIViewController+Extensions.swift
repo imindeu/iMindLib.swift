@@ -12,13 +12,10 @@ extension UIViewController {
     
     // MARK: Presenting and reporting messages
     
-    /**
-     Presents the level and the message in a custom presenter or in a UIAlertViewController as default
-     - parameter level: The level of the info. 
-        The value can be a LevelType which appears as a string like e.g. "Error" or "Warning"
-     - parameter messsage: The main content of the message. The value can be a custom string.
-     */
-
+    /// Presents the level and the message in a custom presenter or in a UIAlertViewController as default
+    /// - parameter level: The level of the info.
+    /// The value can be a LevelType which appears as a string like e.g. "Error" or "Warning"
+    /// - parameter messsage: The main content of the message. The value can be a custom string.
     func showInfo(level: LevelType, message: String, onlyDebug: Bool = false, shouldReport: Bool = true) {
         
         #if DEBUG
