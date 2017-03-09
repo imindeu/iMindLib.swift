@@ -6,8 +6,6 @@
 //  Copyright © 2017. iMind. All rights reserved.
 //
 
-#if !os(macOS) && !os(Linux)
-
 import Foundation
 
 public extension Int {
@@ -54,5 +52,3 @@ public extension Int {
     }
 
 }
-
-#endif

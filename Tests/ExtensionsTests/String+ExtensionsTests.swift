@@ -5,12 +5,11 @@
 //  Created by Révész Ádám on 2017. 01. 12..
 //  Copyright © 2017. iMind. All rights reserved.
 //
-#if !os(macOS) && !os(Linux)
 
 import XCTest
 @testable import iMindLib
 
-class StringExtensionsTest: XCTestCase {
+class StringExtensionsTests: XCTestCase {
     
     func testPasswordValidator() {
         XCTAssertFalse("asdf".isValidPassword(), "Passwords under 6 chars long are meant to be invalid.")
@@ -32,4 +31,12 @@ class StringExtensionsTest: XCTestCase {
     
 }
 
-#endif
+extension StringExtensionsTests {
+    static var allTests : [(String, (StringExtensionsTests) -> () throws -> Void)] {
+        return [
+            ("testPasswordValidator", testPasswordValidator),
+            ("testEmailValidator", testEmailValidator)
+        ]
+    }
+    
+}

@@ -1,6 +1,10 @@
 import XCTest
 @testable import iMindLib
+import Extensions
+import Models
 
 XCTMain([
-     testCase(iMind_LibTests.allTests)
+     testCase(AtomicVariableTests.allTests),
+     testCase(IntExtensionsTests.allTests),
+     testCase(StringExtensionsTests.allTests)
 ])

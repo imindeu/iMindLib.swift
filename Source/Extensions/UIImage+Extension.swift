@@ -6,6 +6,8 @@
 //  Copyright © 2017 iMind. All rights reserved.
 //
 
+#if !os(macOS) && !os(Linux)
+    
 import UIKit
 
 extension UIImage {
@@ -159,3 +161,5 @@ extension UIImage {
     }
 
 }
+    
+#endif

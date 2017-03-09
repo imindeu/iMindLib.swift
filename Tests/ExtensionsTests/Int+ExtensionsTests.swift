@@ -6,13 +6,11 @@
 //  Copyright © 2017. iMind. All rights reserved.
 //
 
-#if !os(macOS) && !os(Linux)
-    
 import XCTest
 
 @testable import iMindLib
 
-class IntExtensionsTest: XCTestCase {
+class IntExtensionsTests: XCTestCase {
     
     func testAbbreviate() {
         XCTAssertEqual(0.abbreviate(), "0")
@@ -39,4 +37,12 @@ class IntExtensionsTest: XCTestCase {
     
 }
 
-#endif
+extension IntExtensionsTests {
+    static var allTests : [(String, (IntExtensionsTests) -> () throws -> Void)] {
+        return [
+            ("testAbbreviate", testAbbreviate),
+            ("testToRoman", testToRoman)
+        ]
+    }
+
+}

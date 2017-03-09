@@ -6,6 +6,8 @@
 //  Copyright © 2017 iMind. All rights reserved.
 //
 
+#if !os(macOS) && !os(Linux)
+
 import Foundation
 import UIKit
 
@@ -21,3 +23,6 @@ extension UIImageView {
         })
     }
 }
+
+
+#endif

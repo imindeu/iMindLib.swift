@@ -6,6 +6,8 @@
 //  Copyright © 2017. iMind. All rights reserved.
 //
 
+#if !os(macOS) && !os(Linux)
+
 import UIKit
 
 extension UIViewController {
@@ -42,3 +44,5 @@ extension UIViewController {
         }
     }
 }
+
+#endif

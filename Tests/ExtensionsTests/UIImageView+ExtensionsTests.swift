@@ -5,6 +5,7 @@
 //  Created by David Frenkel on 28/02/2017.
 //  Copyright © 2017 iMind. All rights reserved.
 //
+#if !os(macOS) && !os(Linux)
 
 import XCTest
 
@@ -20,3 +21,5 @@ class UIImageViewExtensionsTests: XCTestCase {
     }
     
 }
+
+#endif

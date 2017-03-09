@@ -5,6 +5,7 @@
 //  Created by Rezessy Miklós on 2017. 01. 24..
 //  Copyright © 2017. iMind. All rights reserved.
 //
+#if !os(macOS) && !os(Linux)
 
 import XCTest
 @testable import iMindLib
@@ -52,3 +53,5 @@ class UIViewControllerExtensionsTest: XCTestCase {
         XCTAssertEqual(reporter.attributes["message"], "This is a test error")
     }
 }
+
+#endif

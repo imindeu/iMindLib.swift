@@ -12,7 +12,7 @@ import XCTest
 
 @testable import iMindLib
 
-class ColorExtensionsTest: XCTestCase {
+class ColorExtensionsTests: XCTestCase {
     
     func testRedComponent() {
         XCTAssertEqual(UIColor.red.redComponent, 255)
