@@ -24,5 +24,5 @@ script:
     - xcodebuild -project iMindLib.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage "$CODECOVERAGE" test | xcpretty -c
     - if [ $TEST_PACKAGEMANAGERS == "YES" ]; then ./scripts/test_packagemanagers.sh; fi
 after_success:
-    - if [ $CODECOVERAGE == "YES"]; then bash <(curl -s https://codecov.io/bash) -cF ios; fi
+    - if [ $CODECOVERAGE == "YES" ]; then bash <(curl -s https://codecov.io/bash) -cF ios; fi
     - if [ $GEN_DOCS == "YES" ]; then ./scripts/generate_docs.sh; fi
