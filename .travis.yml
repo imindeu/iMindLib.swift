@@ -12,7 +12,7 @@ notifications:
   slack: imind:VmxAeQTYy3BrScWr40M1lTT7
 
 install:
-    - ./install_swiftlint.sh
+    - ./scripts/install_swiftlint.sh
 
 script:
     - xcodebuild -project iMindLib.xcodeproj -scheme iMindLib-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage YES test 

@@ -5,7 +5,7 @@
 //  Created by David Frenkel on 27/02/2017.
 //  Copyright © 2017 iMind. All rights reserved.
 //
-#if !os(macOS) && !os(Linux)
+#if !os(macOS) && !os(Linux) && !os(watchOS)
 
 import XCTest
 

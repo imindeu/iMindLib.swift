@@ -5,7 +5,7 @@
 //  Created by Rezessy Miklós on 2017. 01. 24..
 //  Copyright © 2017. iMind. All rights reserved.
 //
-#if !os(macOS) && !os(Linux)
+#if !os(macOS) && !os(Linux) && !os(watchOS)
 
 import XCTest
 @testable import iMindLib

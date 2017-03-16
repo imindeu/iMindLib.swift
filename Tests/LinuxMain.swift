@@ -1,7 +1,6 @@
 import XCTest
-@testable import iMindLib
-import Extensions
-import Models
+@testable import ExtensionsTests
+@testable import ModelsTests
 
 XCTMain([
      testCase(AtomicVariableTests.allTests),
