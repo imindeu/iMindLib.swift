@@ -16,5 +16,6 @@ install:
 
 script:
     - xcodebuild -project iMindLib.xcodeproj -scheme iMindLib-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage YES test 
+    - ./scripts/test_packagemanagers.sh
 after_success:
     - bash <(curl -s https://codecov.io/bash) -cF ios

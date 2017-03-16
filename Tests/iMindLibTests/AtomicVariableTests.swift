@@ -33,12 +33,18 @@ class AtomicVariableTests: XCTestCase {
             })
         }
         queue.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.milliseconds(1)) {
-            XCTAssertEqual(variable.value, 3)
-            variable.atomically({ $0 = 4 })
-            XCTAssertEqual(variable.value, 4)
+            variable.atomically({ value in
+                XCTAssertEqual(value, 3)
+                value = 4
+            })
             expectation.fulfill()
         }
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertEqual(variable.value, 4)
+        }
     }
     
 }
