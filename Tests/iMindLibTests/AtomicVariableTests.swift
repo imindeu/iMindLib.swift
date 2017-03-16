@@ -29,8 +29,8 @@ class AtomicVariableTests: XCTestCase {
                 sleep(1)
                 value = 3
                 sleep(2)
+                XCTAssertEqual(value, 3)
             })
-            XCTAssertEqual(variable.value, 3)
         }
         queue.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.milliseconds(1)) {
             XCTAssertEqual(variable.value, 3)
@@ -44,7 +44,7 @@ class AtomicVariableTests: XCTestCase {
 }
 
 extension AtomicVariableTests {
-    static var allTests : [(String, (AtomicVariableTests) -> () throws -> Void)] {
+    static var allTests: [(String, (AtomicVariableTests) -> () throws -> Void)] {
         return [
             ("testSimple", testSimple),
             ("testMultipleAccess", testMultipleAccess)
