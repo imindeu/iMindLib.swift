@@ -16,7 +16,7 @@ public extension Int {
         let absValue = abs(self)
         let sign = self < 0 ? "-" : ""
         
-        if absValue < 1000 {
+        guard absValue >= 1000 else {
             return "\(sign)\(absValue)"
         }
         
@@ -31,24 +31,27 @@ public extension Int {
     /// Converts to it's roman number format
     /// - returns: The roman number string object
     public func toRoman() -> String {
-        let romanValues = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
-        let arabicValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+        var number = self
         
-        var startingValue = self
-        return romanValues.enumerated().reduce("", { (r, e) -> String in
-            let arabicValue = arabicValues[e.offset]
-            let romanChar = e.element
-            let div = startingValue / arabicValue
+        guard number > 0 else {
+            return ""
+        }
+
+        let values = [("M", 1000), ("CM", 900), ("D", 500), ("CD", 400),
+                      ("C",100), ("XC", 90), ("L",50), ("XL",40),
+                      ("X",10), ("IX", 9), ("V",5),("IV",4), ("I",1)]
+        
+        return values.reduce("", { (result, value) -> String in
+            let count = number / value.1
             
-            if div > 0 {
-                startingValue -= arabicValue * div
-                return (0..<div).reduce(r, { (c, _) -> String in
-                    c + romanChar
+            if count != 0 {
+                return result + (1...count).reduce("", { (res, _) -> String in
+                    number -= value.1
+                    return res + value.0
                 })
             }
             
-            return r
+            return result
         })
     }
-
 }
