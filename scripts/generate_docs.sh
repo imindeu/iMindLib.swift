@@ -11,17 +11,17 @@ echo
 echo "Generating docs"
 echo "========================="
 
-clean_branch=$(git status --porcelain)
-if [ "$clean_branch" != "" ]; then
-    echo "Aborting: current branch is dirty"
-    exit 1
-fi
+#clean_branch=$(git status --porcelain)
+#if [ "$clean_branch" != "" ]; then
+#    echo "Aborting: current branch is dirty"
+#    exit 1
+#fi
 
-current_branch=$(git symbolic-ref HEAD --short)
-if [ "$current_branch" != "master" ]; then
-    echo "Aborting: current branch differs from master"
-    exit 1
-fi
+#current_branch=$(git symbolic-ref HEAD --short)
+#if [ "$current_branch" != "master" ]; then
+#    echo "Aborting: current branch differs from master"
+#    exit 1
+#fi
 
 jazzy \
     --clean \
@@ -36,7 +36,7 @@ jazzy \
     --github_url "https://github.com/imindeu/iMindLib.swift"
 
 git add ../docs 1>/dev/null
-git commit -m "Update documentation" 1>/dev/null
+git commit -m "Update documentation [skip ci]" 1>/dev/null
 git push origin master 1>/dev/null
 echo "Successfully added to version control"
 
