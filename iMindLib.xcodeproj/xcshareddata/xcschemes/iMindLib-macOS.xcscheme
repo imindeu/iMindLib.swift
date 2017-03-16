@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
+               BlueprintIdentifier = "11358E9F1E7AC6DC00418254"
                BuildableName = "iMindLib.framework"
-               BlueprintName = "iMindLib-iOS"
+               BlueprintName = "iMindLib-macOS"
                ReferencedContainer = "container:iMindLib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D73E5C81E1FAB4D00370EA7"
-               BuildableName = "iMindLibTests-iOS.xctest"
-               BlueprintName = "iMindLibTests-iOS"
+               BlueprintIdentifier = "11358EB51E7AC79C00418254"
+               BuildableName = "iMindLibTests-macOS.xctest"
+               BlueprintName = "iMindLibTests-macOS"
                ReferencedContainer = "container:iMindLib.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
+            BlueprintIdentifier = "11358E9F1E7AC6DC00418254"
             BuildableName = "iMindLib.framework"
-            BlueprintName = "iMindLib-iOS"
+            BlueprintName = "iMindLib-macOS"
             ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
+            BlueprintIdentifier = "11358E9F1E7AC6DC00418254"
             BuildableName = "iMindLib.framework"
-            BlueprintName = "iMindLib-iOS"
+            BlueprintName = "iMindLib-macOS"
             ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D73E5BF1E1FAB4C00370EA7"
+            BlueprintIdentifier = "11358E9F1E7AC6DC00418254"
             BuildableName = "iMindLib.framework"
-            BlueprintName = "iMindLib-iOS"
+            BlueprintName = "iMindLib-macOS"
             ReferencedContainer = "container:iMindLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

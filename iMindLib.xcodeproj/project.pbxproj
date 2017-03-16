@@ -16,6 +16,19 @@
 		11358E9B1E7AAA4C00418254 /* UIImage+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E891E7AAA2200418254 /* UIImage+ExtensionsTests.swift */; };
 		11358E9C1E7AAA4C00418254 /* UIImageView+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E8A1E7AAA2200418254 /* UIImageView+ExtensionsTests.swift */; };
 		11358E9D1E7AAA4C00418254 /* UIViewController+ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E8B1E7AAA2200418254 /* UIViewController+ExtensionsTest.swift */; };
+		11358EA31E7AC6DC00418254 /* InfoReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FA6301E39EC12005996AA /* InfoReporter.swift */; };
+		11358EA51E7AC6DC00418254 /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BE0081E37460C00AE4B3C /* InfoPresenter.swift */; };
+		11358EA71E7AC6DC00418254 /* AtomicVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119163901E535F4C00DB041A /* AtomicVariable.swift */; };
+		11358EA81E7AC6DC00418254 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA451F1E3A1025007A6A7F /* Int+Extensions.swift */; };
+		11358EA91E7AC6DC00418254 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BA01E2925B00078E8CB /* String+Extensions.swift */; };
+		11358EAA1E7AC6DC00418254 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657B9F1E2925B00078E8CB /* Date+Extensions.swift */; };
+		11358EAD1E7AC6DC00418254 /* iMindLib-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 11657BA11E2925B00078E8CB /* iMindLib-Swift.h */; };
+		11358EBA1E7AC79C00418254 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E871E7AAA2200418254 /* String+ExtensionsTests.swift */; };
+		11358EBB1E7AC79C00418254 /* AtomicVariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E831E7AAA2200418254 /* AtomicVariableTests.swift */; };
+		11358EBD1E7AC79C00418254 /* Int+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E861E7AAA2200418254 /* Int+ExtensionsTests.swift */; };
+		11358EBF1E7AC79C00418254 /* iMindLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11358E851E7AAA2200418254 /* iMindLibTests.swift */; };
+		11358EC21E7AC79C00418254 /* iMindLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */; };
+		11358EC41E7AC79C00418254 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11358E881E7AAA2200418254 /* testImage.jpg */; };
 		11657BA31E2925B00078E8CB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657B9E1E2925B00078E8CB /* Color+Extensions.swift */; };
 		11657BA41E2925B00078E8CB /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657B9F1E2925B00078E8CB /* Date+Extensions.swift */; };
 		11657BA51E2925B00078E8CB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11657BA01E2925B00078E8CB /* String+Extensions.swift */; };
@@ -31,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		11F5C1681E7AD37500822B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D73E5B71E1FAB4C00370EA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11358E9F1E7AC6DC00418254;
+			remoteInfo = "iMindLib-macOS";
+		};
 		4D73E5CB1E1FAB4D00370EA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D73E5B71E1FAB4C00370EA7 /* Project object */;
@@ -50,6 +70,8 @@
 		11358E891E7AAA2200418254 /* UIImage+ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		11358E8A1E7AAA2200418254 /* UIImageView+ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		11358E8B1E7AAA2200418254 /* UIViewController+ExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ExtensionsTest.swift"; sourceTree = "<group>"; };
+		11358EB31E7AC6DC00418254 /* iMindLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMindLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11358EC81E7AC79C00418254 /* iMindLibTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iMindLibTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11657B9E1E2925B00078E8CB /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		11657B9F1E2925B00078E8CB /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		11657BA01E2925B00078E8CB /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -58,7 +80,7 @@
 		11657BAC1E2925BD0078E8CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119163901E535F4C00DB041A /* AtomicVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicVariable.swift; sourceTree = "<group>"; };
 		4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMindLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMindLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D73E5C91E1FAB4D00370EA7 /* iMindLibTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iMindLibTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CA451F1E3A1025007A6A7F /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		84176EB91E3A2DA4008363A2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8430BE0D1E51A92E006E9C9F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
@@ -68,6 +90,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		11358EAB1E7AC6DC00418254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11358EC11E7AC79C00418254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11358EC21E7AC79C00418254 /* iMindLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D73E5BC1E1FAB4C00370EA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,7 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */,
-				4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */,
+				4D73E5C91E1FAB4D00370EA7 /* iMindLibTests-iOS.xctest */,
+				11358EB31E7AC6DC00418254 /* iMindLib.framework */,
+				11358EC81E7AC79C00418254 /* iMindLibTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +222,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		11358EAC1E7AC6DC00418254 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11358EAD1E7AC6DC00418254 /* iMindLib-Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D73E5BD1E1FAB4C00370EA7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,9 +241,46 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D73E5BF1E1FAB4C00370EA7 /* iMindLib */ = {
+		11358E9F1E7AC6DC00418254 /* iMindLib-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib" */;
+			buildConfigurationList = 11358EB01E7AC6DC00418254 /* Build configuration list for PBXNativeTarget "iMindLib-macOS" */;
+			buildPhases = (
+				11358EA01E7AC6DC00418254 /* Sources */,
+				11358EAB1E7AC6DC00418254 /* Frameworks */,
+				11358EAC1E7AC6DC00418254 /* Headers */,
+				11358EAE1E7AC6DC00418254 /* Resources */,
+				11358EAF1E7AC6DC00418254 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iMindLib-macOS";
+			productName = iMindLib;
+			productReference = 11358EB31E7AC6DC00418254 /* iMindLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		11358EB51E7AC79C00418254 /* iMindLibTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11358EC51E7AC79C00418254 /* Build configuration list for PBXNativeTarget "iMindLibTests-macOS" */;
+			buildPhases = (
+				11358EB81E7AC79C00418254 /* Sources */,
+				11358EC11E7AC79C00418254 /* Frameworks */,
+				11358EC31E7AC79C00418254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F5C1691E7AD37500822B64 /* PBXTargetDependency */,
+			);
+			name = "iMindLibTests-macOS";
+			productName = iMindLibTests;
+			productReference = 11358EC81E7AC79C00418254 /* iMindLibTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D73E5BF1E1FAB4C00370EA7 /* iMindLib-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib-iOS" */;
 			buildPhases = (
 				4D73E5BB1E1FAB4C00370EA7 /* Sources */,
 				4D73E5BC1E1FAB4C00370EA7 /* Frameworks */,
@@ -208,14 +292,14 @@
 			);
 			dependencies = (
 			);
-			name = iMindLib;
+			name = "iMindLib-iOS";
 			productName = iMindLib;
 			productReference = 4D73E5C01E1FAB4D00370EA7 /* iMindLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4D73E5C81E1FAB4D00370EA7 /* iMindLibTests */ = {
+		4D73E5C81E1FAB4D00370EA7 /* iMindLibTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests" */;
+			buildConfigurationList = 4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests-iOS" */;
 			buildPhases = (
 				4D73E5C51E1FAB4D00370EA7 /* Sources */,
 				4D73E5C61E1FAB4D00370EA7 /* Frameworks */,
@@ -226,9 +310,9 @@
 			dependencies = (
 				4D73E5CC1E1FAB4D00370EA7 /* PBXTargetDependency */,
 			);
-			name = iMindLibTests;
+			name = "iMindLibTests-iOS";
 			productName = iMindLibTests;
-			productReference = 4D73E5C91E1FAB4D00370EA7 /* iMindLibTests.xctest */;
+			productReference = 4D73E5C91E1FAB4D00370EA7 /* iMindLibTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -241,6 +325,14 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = iMind;
 				TargetAttributes = {
+					11358E9F1E7AC6DC00418254 = {
+						DevelopmentTeam = VKKM3M85G8;
+						ProvisioningStyle = Automatic;
+					};
+					11358EB51E7AC79C00418254 = {
+						DevelopmentTeam = VKKM3M85G8;
+						ProvisioningStyle = Automatic;
+					};
 					4D73E5BF1E1FAB4C00370EA7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VKKM3M85G8;
@@ -266,13 +358,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D73E5BF1E1FAB4C00370EA7 /* iMindLib */,
-				4D73E5C81E1FAB4D00370EA7 /* iMindLibTests */,
+				4D73E5BF1E1FAB4C00370EA7 /* iMindLib-iOS */,
+				4D73E5C81E1FAB4D00370EA7 /* iMindLibTests-iOS */,
+				11358E9F1E7AC6DC00418254 /* iMindLib-macOS */,
+				11358EB51E7AC79C00418254 /* iMindLibTests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		11358EAE1E7AC6DC00418254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11358EC31E7AC79C00418254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11358EC41E7AC79C00418254 /* testImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D73E5BE1E1FAB4C00370EA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +400,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11358EAF1E7AC6DC00418254 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		84BD05721E3A037700BA6DF4 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +431,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		11358EA01E7AC6DC00418254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11358EA31E7AC6DC00418254 /* InfoReporter.swift in Sources */,
+				11358EA51E7AC6DC00418254 /* InfoPresenter.swift in Sources */,
+				11358EA71E7AC6DC00418254 /* AtomicVariable.swift in Sources */,
+				11358EA81E7AC6DC00418254 /* Int+Extensions.swift in Sources */,
+				11358EA91E7AC6DC00418254 /* String+Extensions.swift in Sources */,
+				11358EAA1E7AC6DC00418254 /* Date+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11358EB81E7AC79C00418254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11358EBA1E7AC79C00418254 /* String+ExtensionsTests.swift in Sources */,
+				11358EBB1E7AC79C00418254 /* AtomicVariableTests.swift in Sources */,
+				11358EBD1E7AC79C00418254 /* Int+ExtensionsTests.swift in Sources */,
+				11358EBF1E7AC79C00418254 /* iMindLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D73E5BB1E1FAB4C00370EA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,14 +490,98 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		11F5C1691E7AD37500822B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11358E9F1E7AC6DC00418254 /* iMindLib-macOS */;
+			targetProxy = 11F5C1681E7AD37500822B64 /* PBXContainerItemProxy */;
+		};
 		4D73E5CC1E1FAB4D00370EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4D73E5BF1E1FAB4C00370EA7 /* iMindLib */;
+			target = 4D73E5BF1E1FAB4C00370EA7 /* iMindLib-iOS */;
 			targetProxy = 4D73E5CB1E1FAB4D00370EA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		11358EB11E7AC6DC00418254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VKKM3M85G8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLib;
+				PRODUCT_NAME = iMindLib;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		11358EB21E7AC6DC00418254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VKKM3M85G8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLib;
+				PRODUCT_NAME = iMindLib;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		11358EC61E7AC79C00418254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = VKKM3M85G8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		11358EC71E7AC79C00418254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = VKKM3M85G8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4D73E5D21E1FAB4D00370EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -466,7 +697,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iMindLib;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -490,7 +721,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.iMind.iMindLib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iMindLib;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 3.0;
@@ -501,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = VKKM3M85G8;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -514,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = VKKM3M85G8;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -526,6 +759,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11358EB01E7AC6DC00418254 /* Build configuration list for PBXNativeTarget "iMindLib-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11358EB11E7AC6DC00418254 /* Debug */,
+				11358EB21E7AC6DC00418254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11358EC51E7AC79C00418254 /* Build configuration list for PBXNativeTarget "iMindLibTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11358EC61E7AC79C00418254 /* Debug */,
+				11358EC71E7AC79C00418254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4D73E5BA1E1FAB4C00370EA7 /* Build configuration list for PBXProject "iMindLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -535,7 +786,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib" */ = {
+		4D73E5D41E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLib-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73E5D51E1FAB4D00370EA7 /* Debug */,
@@ -544,7 +795,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests" */ = {
+		4D73E5D71E1FAB4D00370EA7 /* Build configuration list for PBXNativeTarget "iMindLibTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73E5D81E1FAB4D00370EA7 /* Debug */,
