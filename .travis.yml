@@ -9,14 +9,15 @@ env:
     - LC_CTYPE=en_US.UTF-8
     - LANG=en_US.UTF-8
   matrix:
-    - DESTINATION="platform=iOS Simulator,name=iPhone 6" SCHEME="iMindLib-iOS" SDK=iphonesimulator CODECOVERAGE="YES" TEST_PACKAGEMANAGERS="YES"
-    - DESTINATION="arch=x86_64" SCHEME="iMindLib-macOS" SDK=macosx CODECOVERAGE="NO" TEST_PACKAGEMANAGERS="NO"
+    - DESTINATION="platform=iOS Simulator,name=iPhone 6" SCHEME="iMindLib-iOS" SDK=iphonesimulator CODECOVERAGE="YES" TEST_PACKAGEMANAGERS="YES" GEN_DOCS="YES"
+    - DESTINATION="arch=x86_64" SCHEME="iMindLib-macOS" SDK=macosx CODECOVERAGE="NO" TEST_PACKAGEMANAGERS="NO" GEN_DOCS="NO"
 
 notifications:
   slack: imind:VmxAeQTYy3BrScWr40M1lTT7
 
 install:
     - ./scripts/install_swiftlint.sh
+    - ./scripts/install_jazzy.sh
 
 script:
     - set -o pipefail
@@ -24,3 +25,4 @@ script:
     - if [ $TEST_PACKAGEMANAGERS == "YES" ]; then ./scripts/test_packagemanagers.sh; fi
 after_success:
     - if [ $CODECOVERAGE == "YES"]; then bash <(curl -s https://codecov.io/bash) -cF ios; fi
+    - if [ $GEN_DOCS == "YES" ]; then ./scripts/generate_docs.sh; fi
