@@ -25,4 +25,14 @@ script:
     - if [ $TEST_PACKAGEMANAGERS == "YES" ]; then ./scripts/test_packagemanagers.sh; fi
 after_success:
     - if [ $CODECOVERAGE == "YES" ]; then bash <(curl -s https://codecov.io/bash) -cF ios; fi
+
+before_deploy
     - if [ $GEN_DOCS == "YES" ]; then ./scripts/generate_docs.sh; fi
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
