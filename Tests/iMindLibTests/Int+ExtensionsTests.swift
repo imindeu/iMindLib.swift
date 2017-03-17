@@ -36,14 +36,3 @@ class IntExtensionsTests: XCTestCase {
     }
     
 }
-
-extension IntExtensionsTests {
-    
-    static var allTests: [(String, (IntExtensionsTests) -> () throws -> Void)] {
-        return [
-            ("testAbbreviate", testAbbreviate),
-            ("testToRoman", testToRoman)
-        ]
-    }
-
-}

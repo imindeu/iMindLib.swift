@@ -7,8 +7,10 @@ set -e
 
 cd $(dirname $0)
 
+SWIFT_VERSION=$(swift --version | head -n1 | awk '{print $4}')
+
 echo
-echo "Generating docs"
+echo "Generating docs (for swift version: $SWIFT_VERSION)"
 echo "========================="
 
 #clean_branch=$(git status --porcelain)
@@ -26,7 +28,7 @@ echo "========================="
 jazzy \
     --clean \
     --output ../docs \
-    --swift-version 3.0.2 \
+    --swift-version $SWIFT_VERSION \
     --source-directory ../ \
     --module iMindLib \
     --min-acl internal \

@@ -48,13 +48,3 @@ class AtomicVariableTests: XCTestCase {
     }
     
 }
-
-extension AtomicVariableTests {
-    static var allTests: [(String, (AtomicVariableTests) -> () throws -> Void)] {
-        return [
-            ("testSimple", testSimple),
-            ("testMultipleAccess", testMultipleAccess)
-        ]
-    }
-
-}

@@ -30,13 +30,3 @@ class StringExtensionsTests: XCTestCase {
     }
     
 }
-
-extension StringExtensionsTests {
-    static var allTests: [(String, (StringExtensionsTests) -> () throws -> Void)] {
-        return [
-            ("testPasswordValidator", testPasswordValidator),
-            ("testEmailValidator", testEmailValidator)
-        ]
-    }
-    
-}
