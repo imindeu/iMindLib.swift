@@ -26,7 +26,7 @@ script:
 after_success:
     - if [ $CODECOVERAGE == "YES" ]; then bash <(curl -s https://codecov.io/bash) -cF ios; fi
 
-before_deploy
+before_deploy:
     - if [ $GEN_DOCS == "YES" ]; then ./scripts/generate_docs.sh; fi
 
 deploy:
