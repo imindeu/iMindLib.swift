@@ -15,12 +15,19 @@ class UIImageExtensionsTests: XCTestCase {
     
     func testSquareImage() {
         let testImage = UIImage(named: "testImage.jpg", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        let testImage2 = UIImage(named: "testImageLandscape.jpg", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        
         let newSize = CGSize(width: 50, height: 50)
         let newImage = testImage?.squareImageToSize(newSize: newSize)
-        
+        let newImage2 = testImage2?.squareImageToSize(newSize: newSize)
+
         XCTAssertNotNil(newImage)
         XCTAssertEqual(newImage?.size.width, newSize.width)
         XCTAssertEqual(newImage?.size.height, newSize.height)
+        XCTAssertNotNil(newImage2)
+        XCTAssertEqual(newImage2?.size.width, newSize.width)
+        XCTAssertEqual(newImage2?.size.height, newSize.height)
+
     }
     
     func testScale() {
@@ -35,8 +42,11 @@ class UIImageExtensionsTests: XCTestCase {
     
     func testOrientation() {
         let testImage = UIImage(named: "testImage.jpg", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        let testImage2 = UIImage(named: "testImageLandscape.jpg", in: Bundle(for: type(of: self)), compatibleWith: nil)
         let newImage = testImage?.correctlyOrientedImage()
+        let newImage2 = testImage2?.correctlyOrientedImage()
         XCTAssertNotNil(newImage)
+        XCTAssertNotNil(newImage2)
     }
     
     func testResize() {
