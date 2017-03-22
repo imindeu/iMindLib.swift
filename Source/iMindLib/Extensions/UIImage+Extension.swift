@@ -22,8 +22,6 @@ extension UIImage {
         
         let sz: CGSize = CGSize(width: newSize.width, height: newSize.height)
         
-        //figure out if the picture is landscape or portrait, then
-        //calculate scale factor and offset
         if self.size.width > self.size.height {
             ratio = Double(newSize.width) / Double(self.size.width)
             delta = (ratio * Double(self.size.width) - ratio * Double(self.size.height))
@@ -135,7 +133,7 @@ extension UIImage {
     func tintWithColor(color: UIColor) -> UIImage? {
         
         UIGraphicsBeginImageContext(self.size)
-        guard let context = UIGraphicsGetCurrentContext() else {
+        guard let context = UIGraphicsGetCurrentContext(), let inputCG = self.cgImage else {
             return nil
         }
         
@@ -145,11 +143,7 @@ extension UIImage {
         context.setBlendMode(CGBlendMode.multiply)
         
         let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
-        
-        guard let inputCG = self.cgImage else {
-            return nil
-        }
-        
+                
         context.clip(to: rect, mask: inputCG)
         color.setFill()
         context.fill(rect)

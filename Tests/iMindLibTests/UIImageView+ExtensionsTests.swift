@@ -20,6 +20,19 @@ class UIImageViewExtensionsTests: XCTestCase {
         XCTAssertTrue(imageView.alpha <= 1 || imageView.alpha >= 0)
     }
     
+    func testCircleShape() {
+        let defaultView = UIImageView()
+        let customView = UIImageView()
+    
+        defaultView.circleShape()
+        customView.circleShape(bordered: false, borderColor: UIColor.red)
+        
+        XCTAssertEqual(defaultView.layer.borderWidth, 2.5)
+        XCTAssertEqual(defaultView.layer.borderColor, UIColor.white.cgColor)
+        XCTAssertEqual(customView.layer.borderWidth, 0.0)
+        XCTAssertEqual(customView.layer.borderColor, UIColor.red.cgColor)
+    }
+    
 }
 
 #endif

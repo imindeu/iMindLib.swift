@@ -22,6 +22,19 @@ extension UIImageView {
             self.alpha = endAlpha
         })
     }
+    
+    /// Makes the UIImageView a circular shape. A border, border width and border color can be set
+    /// - parameter bordered: A Bool to set if the UIImageView should have a border. Default true.
+    /// - parameter borderWidh: A CGFloat that the border width should be, if bordered parameter is true. Default: 2.5.
+    /// - parameter borderColor: A UIColor object that the border color should be. Default is white.
+    func circleShape(bordered: Bool = true, borderWidth: CGFloat = 2.5, borderColor: UIColor = .white) {
+        self.contentMode = .scaleAspectFill
+        self.layer.borderWidth = bordered ? borderWidth : 0.0
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.cornerRadius = self.frame.size.width / 2
+        self.clipsToBounds = true
+    }
+
 }
 
 #endif
