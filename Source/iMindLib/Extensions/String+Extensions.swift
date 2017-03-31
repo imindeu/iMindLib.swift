@@ -28,4 +28,13 @@ extension String {
     func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
+    
+    func monogram() -> String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+            .components(separatedBy: .whitespacesAndNewlines)
+            .flatMap({ word -> Character? in return word.characters.first })
+            .prefix(2)
+            .flatMap({ char -> String in return "\(char)".uppercased() })
+            .joined()
+    }
 }
