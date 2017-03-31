@@ -6,7 +6,8 @@
 import Foundation
 
 extension String {
-    
+    /// Validates e-mail
+    /// - returns: bool - result of the validation
     func isValidEmail() -> Bool {
         do {
             // swiftlint:disable legacy_constructor
@@ -25,10 +26,13 @@ extension String {
         }
     }
     
+    /// Returns a new sting with leading and trailing spaces removed from the original.
     func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
+    /// Returns a new sting with the capitalized first letters from contained words.
+    /// (Reserves order)
     func monogram() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
             .components(separatedBy: .whitespacesAndNewlines)
