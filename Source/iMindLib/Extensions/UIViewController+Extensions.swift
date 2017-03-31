@@ -30,10 +30,10 @@ extension UIViewController {
             if let infoPresenter = self as? InfoPresenter {
                 infoPresenter.presentInfo(level: level, message: message)
             } else {
-                let alertController = UIAlertController(title: level.localizedName,
+                let alertController = UIAlertController(title: level.rawValue.localized,
                                                         message: message,
                                                         preferredStyle: .alert)
-                let dismissAction = UIAlertAction(title: NSLocalizedString("OK", comment: "Title for default button"),
+                let dismissAction = UIAlertAction(title: "OK".localized,
                                                   style: .cancel,
                                                   handler: nil)
                 alertController.addAction(dismissAction)

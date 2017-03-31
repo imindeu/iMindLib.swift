@@ -12,13 +12,13 @@ import XCTest
 
 extension UIViewController: InfoPresenter {
     public func presentInfo(level: LevelType, message: String) {
-        self.title = "Level: \(level.localizedName) Message: \(message)"
+        self.title = "Level: \(level.rawValue) Message: \(message)"
     }
 }
 
 extension UIViewController: InfoReporter {
     public func reportInfo(level: LevelType, message: String) {
-        self.title = "Level: \(level.localizedName) Message: \(message)"
+        self.title = "Level: \(level.rawValue) Message: \(message)"
     }
 }
 
@@ -26,10 +26,8 @@ class UIViewControllerExtensionsTest: XCTestCase {
  
     func testPresentInfo() {
         let vc = UIViewController()
-        print(LevelType.error.localizedName)
         vc.showInfo(level: .error, message: "This is an error message.")
         XCTAssertEqual(vc.title, "Level: ERROR Message: This is an error message.")
-        
     }
     
     func testReportInfo() {

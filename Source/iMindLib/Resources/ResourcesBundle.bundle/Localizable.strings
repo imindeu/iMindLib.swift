@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+
+  Created by Rezessy Miklós on 2017. 03. 16..
+  Copyright © 2017. iMind. All rights reserved.
+*/
+
+//Presenting and reporting messages
+"ERROR" = "Error";
+"WARNING" = "Warning";
+"INFO" = "Info";
+"DEBUG" = "Debug";
+"ALERT" = "Alert";
+
+"OK" = "OK";
