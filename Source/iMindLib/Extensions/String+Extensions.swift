@@ -31,7 +31,7 @@ extension String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
-    /// Returns a new sting with the capitalized first letters from contained words.
+    /// Returns a new sting with the capitalized first letters of the first two contained words.
     /// (Reserves order)
     func monogram() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)

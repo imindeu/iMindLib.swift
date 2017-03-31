@@ -17,6 +17,11 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("asdf   ".trim(), "asdf")
     }
     
+    func testMonogram() {
+        XCTAssertEqual("John Bonham".monogram(), "JB")
+        XCTAssertEqual("lowercased words example".monogram(), "LW")
+    }
+    
     func testEmailValidator() {
         XCTAssertFalse("asfd".isValidEmail())
         XCTAssertTrue("asdf@localhost".isValidEmail())
