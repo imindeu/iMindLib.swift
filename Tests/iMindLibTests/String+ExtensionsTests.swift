@@ -11,9 +11,10 @@ import XCTest
 
 class StringExtensionsTests: XCTestCase {
     
-    func testPasswordValidator() {
-        XCTAssertFalse("asdf".isValidPassword(), "Passwords under 6 chars long are meant to be invalid.")
-        XCTAssert("asdfgh".isValidPassword(), "Passwords at least 6 chars long are meant to be valid.")
+    func testTrim() {
+        XCTAssertEqual(" asdf ".trim(), "asdf")
+        XCTAssertEqual("   asdf".trim(), "asdf")
+        XCTAssertEqual("asdf   ".trim(), "asdf")
     }
     
     func testEmailValidator() {
