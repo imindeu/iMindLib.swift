@@ -12,13 +12,13 @@ import XCTest
 
 extension UIViewController: InfoPresenter {
     public func presentInfo(level: LevelType, message: String) {
-        self.title = "Level: \(level.rawValue) Message: \(message)"
+        self.title = "Level: \(level.rawValue.localized) Message: \(message)"
     }
 }
 
 extension UIViewController: InfoReporter {
     public func reportInfo(level: LevelType, message: String) {
-        self.title = "Level: \(level.rawValue) Message: \(message)"
+        self.title = "Level: \(level.rawValue.localized) Message: \(message)"
     }
 }
 

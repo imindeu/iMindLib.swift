@@ -6,17 +6,18 @@
 import Foundation
 
 extension String {
-
-    ///Returns a localized version of the string
-    ///If no localized version was found in the main bundle, it uses the ResourcesBundle to find a translation
+    
+    /// Returns a localized version of the string
+    /// If no localized version was found in the main bundle's Localizable.strings file,
+    ///     it uses the ResourcesBundle to find a translation
     var localized: String {
-        var defaultLocalized: String  = ""
+        var defaultLocalized: String?
         if let bundlePath = Bundle.main.path(forResource: "ResourcesBundle", ofType: "bundle"),
             let bundle = Bundle(path: bundlePath) {
-            defaultLocalized = bundle.localizedString(forKey: self, value: "", table: nil)
+            defaultLocalized = bundle.localizedString(forKey: self, value: nil, table: nil)
         }
         return Bundle.main.localizedString(forKey: self,
-                                           value: defaultLocalized != "" ? defaultLocalized : self,
+                                           value: defaultLocalized ?? self,
                                            table: nil)
     }
     
