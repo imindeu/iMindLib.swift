@@ -5,6 +5,6 @@
 The iMind swift library.
 
 
-###Localization
+### Localization
 
 All the content coming from the library is localized. If you want to redefine the localized items, please add your translations to your main bundle’s Localizable.strings file.
