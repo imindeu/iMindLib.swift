@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Extensions/Date+Extensions.swift",
+      "line": 146,
+      "symbol": "TimeTerm",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Extensions/Date+Extensions.swift",
+      "line": 147,
+      "symbol": "TimeTerm.short",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Extensions/Date+Extensions.swift",
+      "line": 148,
+      "symbol": "TimeTerm.mid",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Extensions/Date+Extensions.swift",
+      "line": 149,
+      "symbol": "TimeTerm.long",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Models/AtomicVariable.swift",
+      "line": 15,
+      "symbol": "AtomicVariable.queue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 11,
+      "symbol": "InfoPresenter",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 23,
+      "symbol": "LevelType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 24,
+      "symbol": "LevelType.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 25,
+      "symbol": "LevelType.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 26,
+      "symbol": "LevelType.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 27,
+      "symbol": "LevelType.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoPresenter.swift",
+      "line": 28,
+      "symbol": "LevelType.alert",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/imindeu/iMindLib.swift/Source/iMindLib/Protocols/InfoReporter.swift",
+      "line": 11,
+      "symbol": "InfoReporter",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/imindeu/iMindLib.swift"
+}
